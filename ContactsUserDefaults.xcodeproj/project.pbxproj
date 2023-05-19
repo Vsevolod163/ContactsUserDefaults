@@ -56,15 +56,47 @@
 		C66BC9442A1810A8000AC72B /* ContactsUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
-				C66BC9452A1810A8000AC72B /* AppDelegate.swift */,
-				C66BC9472A1810A8000AC72B /* SceneDelegate.swift */,
-				C66BC9492A1810A8000AC72B /* ViewController.swift */,
-				C66BC94B2A1810A8000AC72B /* Main.storyboard */,
-				C66BC94E2A1810A9000AC72B /* Assets.xcassets */,
-				C66BC9502A1810A9000AC72B /* LaunchScreen.storyboard */,
-				C66BC9532A1810A9000AC72B /* Info.plist */,
+				C66BC95C2A1810DD000AC72B /* ViewControllers */,
+				C66BC95B2A1810D6000AC72B /* Storyboards */,
+				C66BC9592A1810C3000AC72B /* App */,
+				C66BC95A2A1810CB000AC72B /* Sources */,
 			);
 			path = ContactsUserDefaults;
+			sourceTree = "<group>";
+		};
+		C66BC9592A1810C3000AC72B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C66BC9452A1810A8000AC72B /* AppDelegate.swift */,
+				C66BC9472A1810A8000AC72B /* SceneDelegate.swift */,
+				C66BC9532A1810A9000AC72B /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C66BC95A2A1810CB000AC72B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C66BC94E2A1810A9000AC72B /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C66BC95B2A1810D6000AC72B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C66BC94B2A1810A8000AC72B /* Main.storyboard */,
+				C66BC9502A1810A9000AC72B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C66BC95C2A1810DD000AC72B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C66BC9492A1810A8000AC72B /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,8 +325,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +334,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lashin.ContactsUserDefaults;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +356,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +365,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lashin.ContactsUserDefaults;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
