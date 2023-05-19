@@ -55,8 +55,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                                 <items>
                                     <navigationItem title="New Contact" id="Vz9-KZ-UY4">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="b2l-wZ-soT"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Done" id="331-Fr-hrt"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="b2l-wZ-soT">
+                                            <connections>
+                                                <action selector="cancelButtonPressed:" destination="cMa-un-b4v" id="VPe-3p-7me"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="331-Fr-hrt">
+                                            <connections>
+                                                <action selector="doneButtonPressed:" destination="cMa-un-b4v" id="98O-gF-tYw"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -87,6 +95,11 @@
                             <constraint firstItem="7Lo-gg-HVo" firstAttribute="leading" secondItem="DQG-By-OmK" secondAttribute="leading" id="n7r-cZ-hIb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="doneButton" destination="331-Fr-hrt" id="TnQ-wZ-KOO"/>
+                        <outlet property="firstNameTextField" destination="uxM-X4-aXv" id="dc8-F1-y9B"/>
+                        <outlet property="lastNameTextField" destination="MIQ-Hl-LAZ" id="cL8-6J-2d9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHR-lH-t4S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
