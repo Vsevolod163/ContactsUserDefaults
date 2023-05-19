@@ -11,7 +11,7 @@
         <!--Contacts-->
         <scene sceneID="Htz-xF-VR7">
             <objects>
-                <tableViewController id="BaH-Ud-xoo" sceneMemberID="viewController">
+                <tableViewController id="BaH-Ud-xoo" customClass="ContactsViewController" customModule="ContactsUserDefaults" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ZpK-tv-wzU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="-41" y="-477"/>
         </scene>
-        <!--View Controller-->
+        <!--New Contact View Controller-->
         <scene sceneID="cLc-Nx-q0M">
             <objects>
-                <viewController id="cMa-un-b4v" sceneMemberID="viewController">
+                <viewController id="cMa-un-b4v" customClass="NewContactViewController" customModule="ContactsUserDefaults" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Tm-dK-JAE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
