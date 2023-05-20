@@ -14,7 +14,9 @@ final class NewContactViewController: UIViewController {
     @IBOutlet var lastNameTextField: UITextField!
     
     weak var delegate: NewContactViewControllerDelegate!
-        
+    
+    private let storageManager = StorageManager.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         doneButton.isEnabled = false
@@ -39,6 +41,7 @@ final class NewContactViewController: UIViewController {
         guard let lastName = lastNameTextField.text else { return }
         
         let contact = Contact(firstName: firstName, lastName: lastName)
+        storageManager.save(contact: contact)
         
         delegate.add(contact: contact)
         dismiss(animated: true)
