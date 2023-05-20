@@ -17,6 +17,8 @@ final class NewContactViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        doneButton.isEnabled = false
+        
         let action = UIAction { [weak self] _ in
             guard let firstName = self?.firstNameTextField.text else { return }
             self?.doneButton.isEnabled = !firstName.isEmpty

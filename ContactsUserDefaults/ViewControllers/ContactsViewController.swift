@@ -27,13 +27,13 @@ final class ContactsViewController: UITableViewController {
 }
 
 // MARK: - UITAbleViewDataSource
-extension ContactsViewController{
+extension ContactsViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         contacts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Contact", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
         let contact = contacts[indexPath.row]
         var content = cell.defaultContentConfiguration()
         content.text = contact.fullName
